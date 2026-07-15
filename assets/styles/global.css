@@ -252,6 +252,7 @@ a:hover {
 .nav__item {
   font-size: 16px;
   line-height: 19px;
+  flex-shrink: 0;
 }
 .nav__item--active {
   position: relative;
