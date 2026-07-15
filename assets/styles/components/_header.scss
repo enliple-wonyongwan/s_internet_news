@@ -1,0 +1,39 @@
+.header {
+  background: #4285f4;
+  height: 60px;
+
+  .container {
+    @include flex-pos($jc: space-between, $ai: center);
+  }
+
+  &__home {
+    width: 30px;
+    height: 30px;
+
+    .icon {
+      background-image: url(../icons/icon-home.png);
+    }
+  }
+
+  &__title {
+    @include flex-pos($g: 15px, $ai: center);
+    font-size: 26px;
+    line-height: 30px;
+    color: #fff;
+    font-weight: 700;
+
+    .icon {
+      width: 30px;
+      height: 35px;
+      background-image: url(../logos/logo-s.png);
+    }
+  }
+
+  &__search {
+    .icon {
+      width: 30px;
+      height: 30px;
+      background-image: url(../icons/icon-glass.png);
+    }
+  }
+}

@@ -1,0 +1,42 @@
+.footer {
+}
+
+.site-footer {
+  background-color: var(--footer-bg);
+  color: var(--footer-text);
+  padding: 78px 0;
+  font-size: 14px;
+  line-height: 28px;
+  font-weight: 400;
+  letter-spacing: -0.28px;
+}
+
+.footer-content {
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-links {
+  margin-bottom: 36px;
+
+  a {
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 28px;
+    text-decoration: none;
+    letter-spacing: -0.32px;
+  }
+}
+
+.footer-info p {
+  margin: 0;
+  letter-spacing: -0.02em;
+}
+
+.footer-copyright {
+  margin-top: 28px;
+  font-size: 14px;
+}
