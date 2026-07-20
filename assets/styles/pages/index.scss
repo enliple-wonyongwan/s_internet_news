@@ -6,7 +6,7 @@
 
   .container {
     @include flex-pos($g: 30px);
-    padding: 31px 16px 130px;
+    padding: 31px 30px 130px;
   }
 
   &__main,
