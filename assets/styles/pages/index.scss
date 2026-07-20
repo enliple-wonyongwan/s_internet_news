@@ -111,14 +111,14 @@
 
   &__thumb {
     aspect-ratio: 940 / 319;
-    margin-bottom: 50px;
+    margin-bottom: 27px;
   }
 
   &__title {
     @include text-cut-multiline();
-    font-size: 52px;
-    line-height: 66px;
-    letter-spacing: -1.04px;
+    font-size: 40px;
+    line-height: 50px;
+    letter-spacing: -0.8px;
     font-weight: 700;
     max-width: 600px;
     margin: 0 auto 20px;
@@ -126,9 +126,9 @@
 
   &__desc {
     @include text-cut-one();
-    font-size: 24px;
+    font-size: 22px;
     line-height: 29px;
-    letter-spacing: -0.48px;
+    letter-spacing: -0.44px;
     color: #999;
   }
 }
@@ -193,7 +193,7 @@
   }
 
   &__title {
-    font-size: 20px;
+    font-size: 18px;
     line-height: 24px;
     letter-spacing: -0.4px;
     font-weight: 700;
@@ -286,12 +286,13 @@
   }
 
   &__title {
-    font-weight: 700;
+    font-weight: 600;
     font-size: 15px;
     line-height: 20px;
     letter-spacing: -0.3px;
 
     &--header {
+      font-weight: 700;
       font-size: 20px;
       line-height: 24px;
       letter-spacing: -0.4px;
