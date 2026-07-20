@@ -1,0 +1,151 @@
+.popup {
+  box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.16);
+  border-radius: 10px;
+
+  &--search {
+    width: 335px;
+    padding: 0 15px;
+
+    .popup__header {
+      padding: 16px 0;
+
+      .popup__btn {
+        display: block;
+        margin-left: auto;
+        width: 12px;
+        height: 12px;
+      }
+
+      .icon {
+        &--close {
+          background-image: url(../icons/icon-close-gray.png);
+        }
+      }
+    }
+
+    .popup__content {
+      .popup__search {
+        @include flex-pos($jc: space-between, $ai: center, $g: 20px);
+        padding: 15px 15px 15px 20px;
+        height: 50px;
+        border-radius: 10px;
+        border: 1px solid #4285f4;
+        background-color: #fff;
+        margin-bottom: 18px;
+
+        .popup__search-input-wrap {
+          width: 100%;
+        }
+
+        .popup__search-input {
+          font-size: 16px;
+          line-height: 19px;
+          letter-spacing: -0.32px;
+          width: 100%;
+        }
+
+        .popup__btn {
+          &--search {
+            .icon {
+              &--search {
+                width: 20px;
+                height: 20px;
+                background-image: url(../icons/icon-glass-gray.png);
+              }
+            }
+          }
+        }
+      }
+
+      .popup__recent {
+        .popup__title {
+          font-size: 14px;
+          line-height: 16px;
+          letter-spacing: -0.28px;
+          color: #4285f4;
+          margin-bottom: 10px;
+        }
+
+        .popup__search-history {
+          overflow: hidden;
+          overflow-y: auto;
+          border-top: 1px solid #c9c9c9;
+          border-bottom: 1px solid #c9c9c9;
+          height: 220px;
+
+          &--empty {
+            @include flex-pos($jc: center, $ai: center);
+          }
+        }
+
+        .popup__search-history-item {
+          position: relative;
+          border-bottom: 1px solid #e9e9e9;
+
+          &:last-of-type {
+            border: none;
+          }
+        }
+
+        .popup__search-history-link {
+          display: block;
+          padding: 13px 10px;
+        }
+
+        .popup__btn {
+          @include pos-y-center();
+          right: 10px;
+
+          &--delete {
+            width: 10px;
+            height: 10px;
+
+            .icon {
+              background-image: url(../icons/icon-close-gray.png);
+            }
+          }
+        }
+
+        .popup__search-history-desc {
+          position: relative;
+          font-size: 12px;
+          line-height: 14px;
+          letter-spacing: -0.24px;
+          color: #999;
+          padding-top: 57px;
+          text-align: center;
+
+          .icon {
+            @include pos-x-center();
+            top: 0;
+            width: 43px;
+            height: 43px;
+
+            &--empty {
+              background-image: url(../icons/icon-exclamation-circle.png);
+            }
+
+            &--off {
+              background-image: url(../icons/icon-timeline.png);
+            }
+          }
+        }
+      }
+    }
+
+    .popup__footer {
+      padding: 14px 0;
+
+      .popup__btns {
+        @include flex-pos($ai: center, $jc: space-between);
+      }
+
+      .popup__btn {
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: -0.28px;
+        color: #666;
+      }
+    }
+  }
+}

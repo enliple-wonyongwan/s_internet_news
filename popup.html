@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>INTERNET NEWS</title>
+    <!-- style -->
+    <link rel="stylesheet" href="./assets/styles/global.css" />
+    <link rel="stylesheet" href="./assets/styles/pages/index.css" />
+  </head>
+  <body>
+    <div class="popup-root" style="height: 100vh; display: flex; align-items: center; justify-content: center; gap: 50px">
+      <div class="popup popup--search">
+        <div class="popup__header">
+          <button class="popup__btn popup__btn--close" type="button" aria-label="팝업 끄기">
+            <span class="icon icon--close" aria-hidden="true"></span>
+          </button>
+        </div>
+        <div class="popup__content">
+          <div class="popup__search">
+            <div class="popup__search-input-wrap">
+              <input class="popup__search-input" name="search" type="text" placeholder="뉴스검색" />
+            </div>
+            <button class="popup__btn popup__btn--search" type="button" aria-label="검색하기">
+              <span class="icon icon--search" aria-hidden="true"></span>
+            </button>
+          </div>
+          <div class="popup__recent">
+            <p class="popup__title">최근 검색어</p>
+            <div class="popup__search-history">
+              <ul class="popup__search-history-list">
+                <li class="popup__search-history-item">
+                  <a class="popup__search-history-link" href="javascript:void(0)">뉴스검색</a>
+                  <button class="popup__btn popup__btn--delete" type="button" aria-label="삭제하기">
+                    <span class="icon" aria-hidden="true"></span>
+                  </button>
+                </li>
+
+                <li class="popup__search-history-item">
+                  <a class="popup__search-history-link" href="javascript:void(0)">뉴스검색</a>
+                  <button class="popup__btn popup__btn--delete" type="button" aria-label="삭제하기">
+                    <span class="icon" aria-hidden="true"></span>
+                  </button>
+                </li>
+                <li class="popup__search-history-item">
+                  <a class="popup__search-history-link" href="javascript:void(0)">뉴스검색</a>
+                  <button class="popup__btn popup__btn--delete" type="button" aria-label="삭제하기">
+                    <span class="icon" aria-hidden="true"></span>
+                  </button>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="popup__footer">
+          <div class="popup__btns">
+            <button class="popup__btn" type="button">전체 삭제</button>
+            <button class="popup__btn" type="button">자동저장 끄기</button>
+          </div>
+        </div>
+      </div>
+      <div class="popup popup--search">
+        <div class="popup__header">
+          <button class="popup__btn popup__btn--close" type="button" aria-label="팝업 끄기">
+            <span class="icon icon--close" aria-hidden="true"></span>
+          </button>
+        </div>
+        <div class="popup__content">
+          <div class="popup__search">
+            <div class="popup__search-input-wrap">
+              <input class="popup__search-input" name="search" type="text" placeholder="뉴스검색" />
+            </div>
+            <button class="popup__btn popup__btn--search" type="button" aria-label="검색하기">
+              <span class="icon icon--search" aria-hidden="true"></span>
+            </button>
+          </div>
+          <div class="popup__recent">
+            <p class="popup__title">최근 검색어</p>
+            <div class="popup__search-history popup__search-history--empty">
+              <p class="popup__search-history-desc"><span class="icon icon--empty"></span>최근 검색 기록이 없습니다.</p>
+            </div>
+          </div>
+        </div>
+        <div class="popup__footer">
+          <div class="popup__btns">
+            <button class="popup__btn" type="button">전체 삭제</button>
+            <button class="popup__btn" type="button">자동저장 끄기</button>
+          </div>
+        </div>
+      </div>
+      <div class="popup popup--search">
+        <div class="popup__header">
+          <button class="popup__btn popup__btn--close" type="button" aria-label="팝업 끄기">
+            <span class="icon icon--close" aria-hidden="true"></span>
+          </button>
+        </div>
+        <div class="popup__content">
+          <div class="popup__search">
+            <div class="popup__search-input-wrap">
+              <input class="popup__search-input" name="search" type="text" placeholder="뉴스검색" />
+            </div>
+            <button class="popup__btn popup__btn--search" type="button" aria-label="검색하기">
+              <span class="icon icon--search" aria-hidden="true"></span>
+            </button>
+          </div>
+          <div class="popup__recent">
+            <p class="popup__title">최근 검색어</p>
+            <div class="popup__search-history popup__search-history--empty">
+              <p class="popup__search-history-desc"><span class="icon icon--off"></span>최근 검색어 자동 저장이 꺼져 있습니다.</p>
+            </div>
+          </div>
+        </div>
+        <div class="popup__footer">
+          <div class="popup__btns">
+            <button class="popup__btn" type="button">전체 삭제</button>
+            <button class="popup__btn" type="button">자동저장 끄기</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

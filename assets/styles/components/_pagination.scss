@@ -1,0 +1,54 @@
+.pagination {
+  &__inner {
+    @include flex-pos($ai: center, $jc: center, $g: 30px);
+  }
+
+  &__btn {
+    &--first,
+    &--last {
+      font-size: 14px;
+      line-height: 16px;
+      letter-spacing: -0.28px;
+      color: #333;
+      text-decoration: underline;
+    }
+
+    &--disabled {
+      color: #bbb;
+      cursor: auto;
+    }
+
+    .icon {
+      width: 26px;
+      height: 26px;
+
+      &--page-prev {
+        background-image: url(../icons/icon-prev.png);
+      }
+
+      &--page-next {
+        background-image: url(../icons/icon-prev.png);
+        transform: rotate(180deg);
+      }
+    }
+  }
+
+  &__nums {
+    @include flex-pos($ai: center, $jc: center, $g: 22px);
+  }
+
+  &__num {
+    width: 26px;
+    height: 26px;
+    border-radius: 100%;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: -0.28px;
+    color: #bbb;
+
+    &--active {
+      background-color: #4285f4;
+      color: #fff;
+    }
+  }
+}
