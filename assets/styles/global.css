@@ -94,7 +94,8 @@ video {
 }
 
 body,
-input {
+input,
+textarea {
   font-family: "Pretendard", -apple-system, BlinkMacSystemFont, "Malgun Gothic", sans-serif;
   color: var(--text-main);
   background-color: #ffffff;
