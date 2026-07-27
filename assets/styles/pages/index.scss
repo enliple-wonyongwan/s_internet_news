@@ -13,14 +13,18 @@
 
       .news-page__sidebar {
         max-width: 390px;
-
-        .headline-list__item {
-          max-width: 100%;
-        }
       }
 
       .headline-list {
         grid-template-columns: 345px minmax(0, 1fr);
+      }
+
+      .headline-list__item {
+        max-width: 100%;
+      }
+
+      .headline-list__thumb {
+        aspect-ratio: 345/219;
       }
 
       .comment-card {
@@ -342,7 +346,7 @@
 
     .popular-news__title {
       @include text-cut-multiline($wlc: 1);
-      font-size: 24px;
+      font-size: 21px;
       line-height: 29px;
       letter-spacing: -0.48px;
       font-weight: 700;
@@ -351,7 +355,7 @@
 
     .popular-news__desc {
       @include text-cut-multiline();
-      font-size: 19px;
+      font-size: 17px;
       line-height: 26px;
       letter-spacing: -0.38px;
       color: #999;
@@ -466,7 +470,7 @@
 
 // news-view
 .news-view {
-  padding: 67px 100px 80px;
+  padding: 30px 50px 80px;
 
   &__header {
     @include flex-pos($ai: center, $jc: space-between);
