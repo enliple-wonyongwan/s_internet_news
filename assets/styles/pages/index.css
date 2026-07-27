@@ -628,7 +628,7 @@
   letter-spacing: -0.32px;
 }
 .news-view__article {
-  margin-bottom: 37px;
+  margin-bottom: 32px;
 }
 .news-view__article:last-of-type {
   margin-bottom: 56px;
@@ -645,7 +645,7 @@
 }
 .news-view__banner {
   padding: 19px 27px;
-  margin-bottom: 36px;
+  margin-bottom: 32px;
   background-color: #f8f8f8;
 }
 .news-view__email {
