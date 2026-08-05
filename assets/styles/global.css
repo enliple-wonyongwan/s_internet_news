@@ -542,6 +542,12 @@ img {
   color: #666;
 }
 
+.ad-banner {
+  padding: 20px;
+  background: #fff;
+  border-radius: 12px;
+}
+
 body {
   font-weight: 400;
   color: #000;
