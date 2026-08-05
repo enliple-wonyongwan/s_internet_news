@@ -1,5 +1,6 @@
 .nav {
   height: 46px;
+  background: #fff;
 
   &__list {
     @include flex-pos($ai: center, $g: 40px);
