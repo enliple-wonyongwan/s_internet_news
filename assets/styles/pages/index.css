@@ -388,6 +388,7 @@
   margin-bottom: 12px;
 }
 .news-grid--2col .news-card__title {
+  line-clamp: 2;
   -webkit-line-clamp: 2;
   font-size: 15px;
   line-height: 20px;
@@ -415,6 +416,7 @@
   max-width: 132px;
 }
 .news-grid--2col.news-grid--variant-1 .news-card__title {
+  line-clamp: 3;
   -webkit-line-clamp: 3;
   font-size: 18px;
   line-height: 24px;
@@ -437,6 +439,7 @@
   margin-bottom: 18px;
 }
 .news-grid--3col .news-card__title {
+  line-clamp: 2;
   -webkit-line-clamp: 2;
 }
 
@@ -482,6 +485,7 @@
   white-space: wrap;
 }
 .popular-news__link .popular-news__title--line-three {
+  line-clamp: 3;
   -webkit-line-clamp: 3;
 }
 .popular-news__thumb {

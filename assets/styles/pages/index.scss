@@ -349,6 +349,7 @@
       }
 
       &__title {
+        line-clamp: 2;
         -webkit-line-clamp: 2;
         font-size: 15px;
         line-height: 20px;
@@ -377,6 +378,7 @@
         }
 
         &__title {
+          line-clamp: 3;
           -webkit-line-clamp: 3;
           font-size: 18px;
           line-height: 24px;
@@ -407,6 +409,7 @@
       }
 
       &__title {
+        line-clamp: 2;
         -webkit-line-clamp: 2;
       }
     }
@@ -452,6 +455,7 @@
       @include text-cut-multiline();
 
       &--line-three {
+        line-clamp: 3;
         -webkit-line-clamp: 3;
       }
     }
