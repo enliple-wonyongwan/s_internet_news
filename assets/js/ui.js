@@ -27,3 +27,4 @@ function checkPosition() {
 }
 
 window.addEventListener('scroll', checkPosition);
+window.addEventListener('load', checkPosition);
