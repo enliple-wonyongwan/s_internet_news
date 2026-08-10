@@ -95,7 +95,8 @@ video {
 
 body,
 input,
-textarea {
+textarea,
+button {
   font-family: "Pretendard", -apple-system, BlinkMacSystemFont, "Malgun Gothic", sans-serif;
   color: var(--text-main);
   background-color: #ffffff;
@@ -206,6 +207,8 @@ img {
   align-items: center;
   gap: normal;
   flex-wrap: nowrap;
+  position: relative;
+  max-width: 100%;
 }
 .header__home {
   width: 30px;
@@ -215,31 +218,72 @@ img {
   background-image: url(../icons/icon-home.png);
 }
 .header__title {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   display: flex;
   flex-direction: row;
   justify-content: start;
   align-items: center;
-  gap: 15px;
+  gap: 6px;
   flex-wrap: nowrap;
-  font-size: 26px;
-  line-height: 30px;
+  font-size: 24px;
+  line-height: 29px;
   color: #fff;
   font-weight: 700;
 }
 .header__title .icon {
-  width: 30px;
-  height: 35px;
+  width: 20px;
+  height: 23px;
   background-image: url(../logos/logo-s.png);
 }
-.header__search .icon {
-  width: 30px;
-  height: 30px;
-  background-image: url(../icons/icon-glass.png);
+.header__actions {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: nowrap;
+}
+.header__user {
+  position: relative;
+}
+.header__btn--user, .header__btn--point {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  gap: 5px;
+  flex-wrap: nowrap;
+  font-size: 14px;
+  letter-spacing: -0.28px;
+  font-weight: 700;
+  color: #fff;
+}
+.header__btn--user .icon, .header__btn--point .icon {
+  width: 20px;
+  height: 20px;
+}
+.header__btn--user .icon {
+  background-image: url(../icons/icon-user-gray.png);
+}
+.header__btn--point .icon {
+  background-image: url(../icons/icon-point.png);
 }
 
 .nav {
   height: 46px;
   background: #fff;
+}
+.nav .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 45px;
+  flex-wrap: nowrap;
 }
 .nav__list {
   display: flex;
@@ -274,6 +318,11 @@ img {
 }
 .nav__link:hover {
   text-decoration: none;
+}
+.nav__search .icon {
+  width: 23px;
+  height: 23px;
+  background-image: url(../icons/icon-glass-blue.png);
 }
 
 .footer {
@@ -556,7 +605,7 @@ body {
 .container {
   max-width: 1365px;
   margin: 0 auto;
-  padding: 0 30px;
+  padding: 0 40px;
   width: 100%;
   height: 100%;
 }

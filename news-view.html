@@ -17,8 +17,21 @@
           <header class="header">
             <div class="container">
               <a class="header__home" href="./index.html"><span class="icon" aria-hidden="true"></span></a>
-              <h1 class="header__title"><span class="icon" aria-hidden="true"></span>뉴스</h1>
-              <button class="header__search" type="button"><span class="icon"></span></button>
+              <a href="./index.html">
+                <h1 class="header__title"><span class="icon" aria-hidden="true"></span>뉴스</h1>
+              </a>
+              <div class="header__actions">
+                <div class="header__user">
+                  <button class="header__btn header__btn--user" type="button">
+                    <span class="icon"></span>
+                    <span class="header__user-name">user1234</span>
+                  </button>
+                </div>
+                <button class="header__btn header__btn--point" type="button">
+                  <span class="icon"></span>
+                  <span class="header__point-value">1,231</span>
+                </button>
+              </div>
             </div>
           </header>
           <nav class="nav">
@@ -55,6 +68,7 @@
                   <a class="nav__link" href="javascript:void(0)">인물</a>
                 </li>
               </ul>
+              <button class="nav__search" type="button"><span class="icon"></span></button>
             </div>
           </nav>
         </div>

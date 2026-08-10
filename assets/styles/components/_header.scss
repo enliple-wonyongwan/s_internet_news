@@ -4,6 +4,8 @@
 
   .container {
     @include flex-pos($jc: space-between, $ai: center);
+    position: relative;
+    max-width: 100%;
   }
 
   &__home {
@@ -16,24 +18,53 @@
   }
 
   &__title {
-    @include flex-pos($g: 15px, $ai: center);
-    font-size: 26px;
-    line-height: 30px;
+    @include pos-center();
+    @include flex-pos($g: 6px, $ai: center);
+    font-size: 24px;
+    line-height: 29px;
     color: #fff;
     font-weight: 700;
 
     .icon {
-      width: 30px;
-      height: 35px;
+      width: 20px;
+      height: 23px;
       background-image: url(../logos/logo-s.png);
     }
   }
 
-  &__search {
-    .icon {
-      width: 30px;
-      height: 30px;
-      background-image: url(../icons/icon-glass.png);
+  &__actions {
+    @include flex-pos($ai: center, $g: 30px);
+  }
+
+  &__user {
+    position: relative;
+  }
+
+  &__btn {
+    &--user,
+    &--point {
+      @include flex-pos($ai: center, $g: 5px);
+      font-size: 14px;
+      letter-spacing: -0.28px;
+      font-weight: 700;
+      color: #fff;
+
+      .icon {
+        width: 20px;
+        height: 20px;
+      }
+    }
+
+    &--user {
+      .icon {
+        background-image: url(../icons/icon-user-gray.png);
+      }
+    }
+
+    &--point {
+      .icon {
+        background-image: url(../icons/icon-point.png);
+      }
     }
   }
 }

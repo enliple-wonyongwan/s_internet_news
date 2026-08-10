@@ -17,7 +17,7 @@ body {
 
 .container {
   @include max-width($mw: 1365px);
-  padding: 0 30px;
+  padding: 0 40px;
   width: 100%;
   height: 100%;
 }
