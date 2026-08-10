@@ -219,6 +219,12 @@
   gap: 30px;
   padding: 31px 30px 42px;
 }
+.headline-list--no-grid {
+  display: block;
+}
+.headline-list--no-grid .news-area-title {
+  margin-bottom: 27px;
+}
 .headline-list__left .headline-list__items {
   display: flex;
   flex-direction: column;

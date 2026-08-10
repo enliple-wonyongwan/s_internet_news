@@ -187,6 +187,14 @@
   gap: 30px;
   padding: 31px 30px 42px;
 
+  &--no-grid {
+    display: block;
+
+    .news-area-title {
+      margin-bottom: 27px;
+    }
+  }
+
   &__left {
     .headline-list__items {
       @include flex-pos($fd: column, $g: 48px);
