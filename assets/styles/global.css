@@ -409,19 +409,8 @@ img {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: 30px;
+  gap: 28px;
   flex-wrap: nowrap;
-}
-.pagination__btn--first, .pagination__btn--last {
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: -0.28px;
-  color: #333;
-  text-decoration: underline;
-}
-.pagination__btn--disabled {
-  color: #bbb;
-  cursor: auto;
 }
 .pagination__btn .icon {
   width: 26px;

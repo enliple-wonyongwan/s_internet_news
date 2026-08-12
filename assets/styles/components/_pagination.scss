@@ -1,22 +1,22 @@
 .pagination {
   &__inner {
-    @include flex-pos($ai: center, $jc: center, $g: 30px);
+    @include flex-pos($ai: center, $jc: center, $g: 28px);
   }
 
   &__btn {
-    &--first,
-    &--last {
-      font-size: 14px;
-      line-height: 16px;
-      letter-spacing: -0.28px;
-      color: #333;
-      text-decoration: underline;
-    }
+    // &--first,
+    // &--last {
+    //   font-size: 14px;
+    //   line-height: 16px;
+    //   letter-spacing: -0.28px;
+    //   color: #333;
+    //   text-decoration: underline;
+    // }
 
-    &--disabled {
-      color: #bbb;
-      cursor: auto;
-    }
+    // &--disabled {
+    //   color: #bbb;
+    //   cursor: auto;
+    // }
 
     .icon {
       width: 26px;
