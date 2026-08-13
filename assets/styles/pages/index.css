@@ -1165,7 +1165,7 @@
   font-weight: 500;
   font-size: 16px;
   line-height: 26px;
-  margin-bottom: 27px;
+  margin-bottom: 20px;
 }
 .comment-card__chat-empty-desc::before {
   content: "";
@@ -1190,16 +1190,15 @@
   align-items: center;
   gap: normal;
   flex-wrap: nowrap;
-  padding: 0 20px;
-  width: 341px;
-  height: 98px;
+  width: 100%;
+  padding: 18px 20px;
   background: rgba(255, 255, 255, 0.1);
   border: 1px solid rgba(96, 165, 250, 0.24);
   border-radius: 10px;
 }
 .comment-card__chat-point-content {
   position: relative;
-  padding-left: 74px;
+  padding-left: 115px;
 }
 .comment-card__chat-point-content::before {
   background-size: contain;
@@ -1213,16 +1212,16 @@
   top: 50%;
   transform: translateY(-50%);
   left: 0;
-  width: 54px;
-  height: 61px;
-  background-image: url(../../icons/icon-point-n-10p.png);
+  width: 90px;
+  height: 90px;
+  background-image: url(../../icons/icon-comment-blue-gradient.png);
 }
 .comment-card__chat-point-title {
   font-weight: 600;
   font-size: 16px;
   line-height: 19px;
   color: #efefef;
-  margin-bottom: 9px;
+  margin-bottom: 6px;
 }
 .comment-card__chat-point-value {
   font-weight: 700;
@@ -1230,9 +1229,20 @@
 }
 .comment-card__chat-point-desc {
   font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;
+  letter-spacing: -0.004em;
+  color: #ffffff;
+  margin-bottom: 4px;
+}
+.comment-card__chat-point-desc .comment-card__chat-point-accent {
+  font-weight: 500;
+}
+.comment-card__chat-point-limit {
+  font-weight: 400;
   font-size: 12px;
   line-height: 16px;
-  color: #b7b7b7;
+  color: rgba(255, 255, 255, 0.5);
 }
 .comment-card__chat-wrap {
   position: relative;
