@@ -899,6 +899,23 @@
   line-height: 19px;
   color: #c9d7ee;
 }
+.comment-card__btn--login.comment-card__btn--with-reply-icon {
+  position: relative;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 18px 20px;
+  height: 86px;
+}
+.comment-card__btn--login.comment-card__btn--with-reply-icon > .icon {
+  width: 16px;
+  height: 16px;
+  background-image: url(../../icons/icon-paper-airplane.png);
+}
+.comment-card__btn--login.comment-card__btn--with-reply-icon .comment-card__tooltip {
+  position: absolute;
+  top: 15px;
+  right: 46px;
+}
 .comment-card__tooltip {
   position: relative;
 }
@@ -912,9 +929,10 @@
   background-color: #fff;
   position: absolute;
   display: none;
-  bottom: calc(100% + 13px);
+  bottom: calc(100% + 12px);
+  transform: translateX(calc(-50% - 13px));
   border-radius: 100px;
-  padding: 9px 22px;
+  padding: 9px 16px;
   pointer-events: none;
   border: 1px solid #bcbcbc;
 }
@@ -923,30 +941,35 @@
   display: block;
   position: absolute;
   box-sizing: border-box;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  top: 100%;
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 11px 7px 0 7px;
-  border-color: #bcbcbc transparent transparent transparent;
+  top: calc(100% - 6px);
+  right: 69px;
+  width: 12px;
+  height: 12px;
+  background: #bcbcbc;
+  border-radius: 0 0 2px 0;
+  transform: rotate(45deg);
 }
 .comment-card__tooltip .comment-card__tooltip-message::after {
   content: "";
   display: block;
   position: absolute;
   box-sizing: border-box;
+  top: calc(100% - 5px);
+  right: 70px;
+  width: 10px;
+  height: 10px;
+  background: #fff;
+  border-radius: 0 0 2px 0;
+  transform: rotate(45deg);
+}
+.comment-card__tooltip .comment-card__tooltip-message .comment-card__tooltip-message-cover {
   position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  top: 100%;
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 10px 6px 0 6px;
-  border-color: #fff transparent transparent transparent;
+  display: inline-block;
+  right: 66px;
+  bottom: 0;
+  width: 17px;
+  height: 9px;
+  background: #fff;
 }
 .comment-card__tooltip .comment-card__tooltip-text {
   font-weight: 500;
@@ -1581,6 +1604,9 @@
   align-items: center;
   gap: 10px;
   flex-wrap: nowrap;
+}
+.comment-card__composer-field .comment-card__composer-submit {
+  flex-shrink: 0;
 }
 .comment-card__composer-input {
   padding: 0;
