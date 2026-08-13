@@ -826,7 +826,6 @@
     inset 0 1px 0 rgba(255, 255, 255, 0.04);
   position: sticky;
   top: 137px;
-  overflow: hidden;
   color: #fff;
   padding: 19px 0;
 
@@ -850,8 +849,6 @@
 
   &__tooltip {
     position: relative;
-    width: 44px;
-    height: 22px;
 
     .icon {
       background-image: url(../../icons/icon-n-1p.png);
@@ -859,13 +856,14 @@
 
     .comment-card__tooltip-message {
       @include pos-x-center();
-      background-color: rgba(255, 255, 255, 0.8);
+      background-color: #fff;
       position: absolute;
       display: none;
-      bottom: calc(100% + 22px);
+      bottom: calc(100% + 13px);
       border-radius: 100px;
       padding: 9px 22px;
       pointer-events: none;
+      border: 1px solid #bcbcbc;
 
       &::before {
         @include elm-create();
@@ -875,7 +873,18 @@
         height: 0;
         border-style: solid;
         border-width: 11px 7px 0 7px;
-        border-color: rgba(255, 255, 255, 0.8) transparent transparent transparent;
+        border-color: #bcbcbc transparent transparent transparent;
+      }
+
+      &::after {
+        @include elm-create();
+        @include pos-x-center();
+        top: 100%;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 10px 6px 0 6px;
+        border-color: #fff transparent transparent transparent;
       }
     }
 
@@ -890,6 +899,31 @@
     &.is-active {
       .comment-card__tooltip-message {
         display: block;
+      }
+    }
+  }
+
+  &__badge {
+    &--n {
+      @include flex-pos($ai: center, $g: 3px);
+      padding: 2px 5px 2px 2px;
+      background-color: #0fd065;
+      border-radius: 50px;
+
+      .icon {
+        flex-shrink: 0;
+        width: 18px;
+        height: 18px;
+        background-image: url(../../icons/icon-n-white-in-black.png);
+      }
+
+      .comment-card__num {
+        flex-shrink: 0;
+        font-weight: 700;
+        font-size: 13px;
+        line-height: 1;
+        letter-spacing: -0.005em;
+        color: #000000;
       }
     }
   }
@@ -998,6 +1032,10 @@
         background-image: url(../../icons/icon-arrow-rotate.png);
       }
     }
+  }
+
+  &__actions {
+    @include flex-pos($ai: center, $g: 13px);
   }
 
   &__notice {
@@ -1461,16 +1499,6 @@
 
   &__composer-field {
     @include flex-pos($g: 10px, $ai: center);
-
-    &--point {
-      position: relative;
-
-      .comment-card__tooltip {
-        @include pos-y-center();
-        left: 165px;
-        pointer-events: none;
-      }
-    }
   }
 
   &__composer-input {

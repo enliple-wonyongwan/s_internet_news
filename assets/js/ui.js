@@ -1,6 +1,7 @@
 const $target = document.querySelector('[data-fix]');
 const $targetChild = document.querySelector('[data-fix-child]');
 function checkPosition() {
+  if (!$target) return;
   const targetRect = $target.getBoundingClientRect();
   const targetChildRect = $targetChild.getBoundingClientRect();
 

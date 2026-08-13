@@ -877,7 +877,6 @@
   box-shadow: 0 18px 42px rgba(2, 8, 23, 0.34), inset 0 1px 0 rgba(255, 255, 255, 0.04);
   position: sticky;
   top: 137px;
-  overflow: hidden;
   color: #fff;
   padding: 19px 0;
 }
@@ -902,8 +901,6 @@
 }
 .comment-card__tooltip {
   position: relative;
-  width: 44px;
-  height: 22px;
 }
 .comment-card__tooltip .icon {
   background-image: url(../../icons/icon-n-1p.png);
@@ -912,13 +909,14 @@
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: #fff;
   position: absolute;
   display: none;
-  bottom: calc(100% + 22px);
+  bottom: calc(100% + 13px);
   border-radius: 100px;
   padding: 9px 22px;
   pointer-events: none;
+  border: 1px solid #bcbcbc;
 }
 .comment-card__tooltip .comment-card__tooltip-message::before {
   content: "";
@@ -933,7 +931,22 @@
   height: 0;
   border-style: solid;
   border-width: 11px 7px 0 7px;
-  border-color: rgba(255, 255, 255, 0.8) transparent transparent transparent;
+  border-color: #bcbcbc transparent transparent transparent;
+}
+.comment-card__tooltip .comment-card__tooltip-message::after {
+  content: "";
+  display: block;
+  position: absolute;
+  box-sizing: border-box;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 100%;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 10px 6px 0 6px;
+  border-color: #fff transparent transparent transparent;
 }
 .comment-card__tooltip .comment-card__tooltip-text {
   font-weight: 500;
@@ -944,6 +957,31 @@
 }
 .comment-card__tooltip.is-active .comment-card__tooltip-message {
   display: block;
+}
+.comment-card__badge--n {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  gap: 3px;
+  flex-wrap: nowrap;
+  padding: 2px 5px 2px 2px;
+  background-color: #0fd065;
+  border-radius: 50px;
+}
+.comment-card__badge--n .icon {
+  flex-shrink: 0;
+  width: 18px;
+  height: 18px;
+  background-image: url(../../icons/icon-n-white-in-black.png);
+}
+.comment-card__badge--n .comment-card__num {
+  flex-shrink: 0;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 1;
+  letter-spacing: -0.005em;
+  color: #000000;
 }
 .comment-card__chat-author {
   display: flex;
@@ -1044,6 +1082,14 @@
 }
 .comment-card__header .comment-card__btn .icon {
   background-image: url(../../icons/icon-arrow-rotate.png);
+}
+.comment-card__actions {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  gap: 13px;
+  flex-wrap: nowrap;
 }
 .comment-card__notice {
   display: flex;
@@ -1525,16 +1571,6 @@
   align-items: center;
   gap: 10px;
   flex-wrap: nowrap;
-}
-.comment-card__composer-field--point {
-  position: relative;
-}
-.comment-card__composer-field--point .comment-card__tooltip {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  left: 165px;
-  pointer-events: none;
 }
 .comment-card__composer-input {
   padding: 0;
